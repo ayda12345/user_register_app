@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="kullaniciuyari_hafta2_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="kullanıcı adı" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jKm-AS-Bid">
+                                <rect key="frame" x="148" y="166" width="104" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="34n-gk-KFG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="şifre" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xxr-hU-Yf9">
+                                <rect key="frame" x="148" y="228" width="97" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="cQh-D2-r2Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="şifreni yeniden gir" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pmR-Lc-pIS">
+                                <rect key="frame" x="148" y="295" width="143" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fu5-vZ-geP">
+                                <rect key="frame" x="166" y="371" width="60" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="kayıt"/>
+                                <connections>
+                                    <action selector="kayıtButon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2BH-VP-vMZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fu5-vZ-geP" firstAttribute="top" secondItem="pmR-Lc-pIS" secondAttribute="bottom" constant="42" id="2Um-MV-ufC"/>
+                            <constraint firstItem="jKm-AS-Bid" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="148" id="4XP-NY-wRQ"/>
+                            <constraint firstItem="jKm-AS-Bid" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="107" id="4q9-Jm-CJn"/>
+                            <constraint firstItem="Xxr-hU-Yf9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6ia-1q-byu"/>
+                            <constraint firstItem="jKm-AS-Bid" firstAttribute="leading" secondItem="Xxr-hU-Yf9" secondAttribute="leading" id="77x-9Z-79S"/>
+                            <constraint firstItem="Xxr-hU-Yf9" firstAttribute="leading" secondItem="pmR-Lc-pIS" secondAttribute="leading" id="GUk-HG-wle"/>
+                            <constraint firstItem="pmR-Lc-pIS" firstAttribute="top" secondItem="Xxr-hU-Yf9" secondAttribute="bottom" constant="33" id="KXD-Hf-ZOC"/>
+                            <constraint firstItem="fu5-vZ-geP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="OCo-Cw-2oP"/>
+                            <constraint firstItem="fu5-vZ-geP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-37.5" id="QD3-gR-0fV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fu5-vZ-geP" secondAttribute="bottom" constant="412" id="bpb-f4-pvx"/>
+                            <constraint firstItem="Xxr-hU-Yf9" firstAttribute="centerX" secondItem="fu5-vZ-geP" secondAttribute="centerX" id="gdP-ma-4rH"/>
+                            <constraint firstItem="Xxr-hU-Yf9" firstAttribute="top" secondItem="jKm-AS-Bid" secondAttribute="bottom" constant="28" id="msP-ZR-jZ4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="kullanıcıAdıText" destination="jKm-AS-Bid" id="Mzu-A3-XFI"/>
+                        <outlet property="şifre2Text" destination="pmR-Lc-pIS" id="bmx-hy-TEw"/>
+                        <outlet property="şifreText" destination="Xxr-hU-Yf9" id="wZD-3q-JYu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
